@@ -17,7 +17,7 @@
 <link href="../deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
 <script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
-<!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><link href="../extra.css" rel="stylesheet">
+<!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js" integrity="sha512-7O5pXpc0oCRrxk8RUfDYFgn0nO1t+jLuIOQdOMRp4APB7uZ4vSjspzp5y6YDtDs4VzUSTbWzBFZ/LKJhnyFOKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><link href="../extra.css" rel="stylesheet">
 <meta property="og:title" content="Introduction to Creating gt Tables">
 <meta property="og:description" content="gt">
 <meta property="og:image" content="https://gt.rstudio.com/logo.svg">
@@ -610,6 +610,10 @@ frame instead as valid <strong>Table Data</strong> for
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
+
+#mwlefoodfi div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead><tr class="gt_col_headings">
@@ -1159,6 +1163,10 @@ add this part using the <code><a href="../reference/tab_header.html">tab_header(
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
+
+#eexombwkke div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
@@ -1677,6 +1685,10 @@ truncated for brevity:</p>
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
+
+#ulbfdpbcyv div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
@@ -1704,11 +1716,10 @@ truncated for brevity:</p>
 </table>
 </div>
 <p>A <strong>source note</strong> can be added to the table’s
-<strong>footer</strong> through use of the
-<code><a href="../reference/tab_source_note.html">tab_source_note()</a></code> function. It works in the same way as
-<code><a href="../reference/tab_header.html">tab_header()</a></code> (it also allows for Markdown inputs) except it
-can be called multiple times—each invocation results in the addition of
-a source note.</p>
+<strong>footer</strong> through use of <code><a href="../reference/tab_source_note.html">tab_source_note()</a></code>.
+It works in the same way as <code><a href="../reference/tab_header.html">tab_header()</a></code> (it also allows
+for Markdown inputs) except it can be called multiple times—each
+invocation results in the addition of a source note.</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Display the `islands_tbl` data with a heading and</span></span>
 <span><span class="co"># two source notes</span></span>
@@ -2167,6 +2178,10 @@ a source note.</p>
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
+
+#fivjubqtxv div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
@@ -2234,11 +2249,11 @@ a source note.</p>
 </table>
 </div>
 <p>Footnotes live inside the <strong>Footer</strong> part and their
-footnote marks are attached to cell data. Footnotes are added with the
-<code><a href="../reference/tab_footnote.html">tab_footnote()</a></code> function. The helper function
+footnote marks are attached to cell data. Footnotes are added with
+<code><a href="../reference/tab_footnote.html">tab_footnote()</a></code>. The helper function
 <code><a href="../reference/cells_body.html">cells_body()</a></code> can be used with the <code>location</code>
 argument to specify which data cells should be the target of the
-footnote. The <code><a href="../reference/cells_body.html">cells_body()</a></code> helper has the two arguments
+footnote. <code><a href="../reference/cells_body.html">cells_body()</a></code> has the two arguments
 <code>columns</code> and <code>rows</code>. For each of these, we can
 supply (1) a vector of colnames or rownames, (2) a vector of column/row
 indices, (3) bare column names wrapped in <code><a href="https://rdrr.io/r/base/c.html" class="external-link">c()</a></code> or row labels
@@ -2708,6 +2723,10 @@ cell. Let’s add a footnote that references the
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
+
+#snayorehal div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
@@ -2732,12 +2751,12 @@ cell. Let’s add a footnote that references the
 <td headers="size" class="gt_row gt_right">11506</td>
 </tr>
 <tr>
-<td headers="name" class="gt_row gt_left">North America<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span>
+<td headers="name" class="gt_row gt_left">North America<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>1</sup></span>
 </td>
 <td headers="size" class="gt_row gt_right">9390</td>
 </tr>
 <tr>
-<td headers="name" class="gt_row gt_left">South America<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span>
+<td headers="name" class="gt_row gt_left">South America<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>1</sup></span>
 </td>
 <td headers="size" class="gt_row gt_right">6795</td>
 </tr>
@@ -2776,7 +2795,7 @@ cell. Let’s add a footnote that references the
 </tfoot>
 <tfoot class="gt_footnotes"><tr>
 <td class="gt_footnote" colspan="2">
-<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span> The Americas.</td>
+<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>1</sup></span> The Americas.</td>
     </tr></tfoot>
 </table>
 </div>
@@ -2811,7 +2830,7 @@ supplying a conditional statement that gets the lowest population.</p>
 <span>    <span class="op">)</span></span>
 <span>  <span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="../reference/tab_footnote.html">tab_footnote</a></span><span class="op">(</span></span>
-<span>    footnote <span class="op">=</span> <span class="st">"The lowest by population."</span>,</span>
+<span>    footnote <span class="op">=</span> <span class="st">"The lowest by area."</span>,</span>
 <span>    locations <span class="op">=</span> <span class="fu"><a href="../reference/cells_body.html">cells_body</a></span><span class="op">(</span></span>
 <span>      columns <span class="op">=</span> <span class="va">size</span>,</span>
 <span>      rows <span class="op">=</span> <span class="va">size</span> <span class="op">==</span> <span class="fu"><a href="https://rdrr.io/r/base/Extremes.html" class="external-link">min</a></span><span class="op">(</span><span class="va">size</span><span class="op">)</span></span>
@@ -3264,6 +3283,10 @@ supplying a conditional statement that gets the lowest population.</p>
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
+
+#kzcbwjcfdj div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
@@ -3282,19 +3305,19 @@ supplying a conditional statement that gets the lowest population.</p>
 <tr>
 <td headers="name" class="gt_row gt_left">Asia</td>
 <td headers="size" class="gt_row gt_right">
-<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span> 16988</td>
+<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>1</sup></span> 16988</td>
 </tr>
 <tr>
 <td headers="name" class="gt_row gt_left">Africa</td>
 <td headers="size" class="gt_row gt_right">11506</td>
 </tr>
 <tr>
-<td headers="name" class="gt_row gt_left">North America<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>2</sup></span>
+<td headers="name" class="gt_row gt_left">North America<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>2</sup></span>
 </td>
 <td headers="size" class="gt_row gt_right">9390</td>
 </tr>
 <tr>
-<td headers="name" class="gt_row gt_left">South America<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>2</sup></span>
+<td headers="name" class="gt_row gt_left">South America<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>2</sup></span>
 </td>
 <td headers="size" class="gt_row gt_right">6795</td>
 </tr>
@@ -3321,7 +3344,7 @@ supplying a conditional statement that gets the lowest population.</p>
 <tr>
 <td headers="name" class="gt_row gt_left">Borneo</td>
 <td headers="size" class="gt_row gt_right">
-<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>3</sup></span> 280</td>
+<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>3</sup></span> 280</td>
 </tr>
 </tbody>
 <tfoot class="gt_sourcenotes">
@@ -3335,16 +3358,16 @@ supplying a conditional statement that gets the lowest population.</p>
 <tfoot class="gt_footnotes">
 <tr>
 <td class="gt_footnote" colspan="2">
-<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span> <span class="gt_from_md">The <strong>largest</strong> by area.</span>
+<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>1</sup></span> <span class="gt_from_md">The <strong>largest</strong> by area.</span>
 </td>
     </tr>
 <tr>
 <td class="gt_footnote" colspan="2">
-<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>2</sup></span> The Americas.</td>
+<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>2</sup></span> The Americas.</td>
     </tr>
 <tr>
 <td class="gt_footnote" colspan="2">
-<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>3</sup></span> The lowest by population.</td>
+<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>3</sup></span> The lowest by area.</td>
     </tr>
 </tfoot>
 </table>
@@ -3828,6 +3851,10 @@ making <em>row labels</em>. Let’s add a stub with our
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
+
+#ybhaaglvij div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead><tr class="gt_col_headings">
@@ -3878,10 +3905,10 @@ making <em>row labels</em>. Let’s add a stub with our
 </tbody>
 </table>
 </div>
-<p>Notice that the landmass names are off the the left in an unstriped
-area? That’s the <strong>stub</strong>. We can apply what’s known as a
-<strong>stubhead label</strong>. This label can be added with the
-<code><a href="../reference/tab_stubhead.html">tab_stubhead()</a></code> function:</p>
+<p>Notice that the landmass names are off the left in an unstriped area?
+That’s the <strong>stub</strong>. We can apply what’s known as a
+<strong>stubhead label</strong>. This label can be added with
+<code><a href="../reference/tab_stubhead.html">tab_stubhead()</a></code>:</p>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Generate a simple table with a stub</span></span>
 <span><span class="co"># and add a stubhead label</span></span>
@@ -4334,6 +4361,10 @@ area? That’s the <strong>stub</strong>. We can apply what’s known as a
 #bfglzvnegs .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
+}
+
+#bfglzvnegs div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
 }
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
@@ -4866,6 +4897,10 @@ footnotes) we use the following statements:</p>
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
+
+#lqeqmfaamr div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
@@ -4884,7 +4919,7 @@ footnotes) we use the following statements:</p>
 <tr>
 <th id="stub_1_1" scope="row" class="gt_row gt_left gt_stub">Asia</th>
 <td headers="stub_1_1 size" class="gt_row gt_right">
-<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span> 16988</td>
+<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>1</sup></span> 16988</td>
 </tr>
 <tr>
 <th id="stub_1_2" scope="row" class="gt_row gt_left gt_stub">Africa</th>
@@ -4901,7 +4936,7 @@ footnotes) we use the following statements:</p>
 <tr>
 <th id="stub_1_5" scope="row" class="gt_row gt_left gt_stub">Antarctica</th>
 <td headers="stub_1_5 size" class="gt_row gt_right">
-<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>2</sup></span> 5500</td>
+<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>2</sup></span> 5500</td>
 </tr>
 <tr>
 <th id="stub_1_6" scope="row" class="gt_row gt_left gt_stub">Europe</th>
@@ -4935,12 +4970,12 @@ footnotes) we use the following statements:</p>
 <tfoot class="gt_footnotes">
 <tr>
 <td class="gt_footnote" colspan="2">
-<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span> <span class="gt_from_md">The <strong>largest</strong> by area.</span>
+<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>1</sup></span> <span class="gt_from_md">The <strong>largest</strong> by area.</span>
 </td>
     </tr>
 <tr>
 <td class="gt_footnote" colspan="2">
-<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>2</sup></span> The lowest by population.</td>
+<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>2</sup></span> The lowest by population.</td>
     </tr>
 </tfoot>
 </table>
@@ -4949,11 +4984,11 @@ footnotes) we use the following statements:</p>
 rows into groups, creating <em>row groups</em>, and results in a display
 of a <em>row group labels</em> right above the each group. This can be
 easily done with a table containing row labels. We can make a new
-<em>row group</em> with each call of the <code><a href="../reference/tab_row_group.html">tab_row_group()</a></code>
-function. The inputs are row group names in the <code>label</code>
-argument, and row references in the <code>rows</code> argument. We can
-use any of the strategies to reference rows as we did we footnotes
-(e.g., vectors of names/indices, select helpers, etc.).</p>
+<em>row group</em> with each <code><a href="../reference/tab_row_group.html">tab_row_group()</a></code> call. The
+inputs are row group names in the <code>label</code> argument, and row
+references in the <code>rows</code> argument. We can use any of the
+strategies to reference rows as we did we footnotes (e.g., vectors of
+names/indices, select helpers, etc.).</p>
 <p>Here we will create three row groups (with row group labels
 <code>continent</code>, <code>country</code>, and
 <code>subregion</code>) to have a grouping of rows.</p>
@@ -5421,6 +5456,10 @@ use any of the strategies to reference rows as we did we footnotes
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
+
+#adgwxbhisi div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
@@ -5464,7 +5503,7 @@ use any of the strategies to reference rows as we did we footnotes
 <tr class="gt_row_group_first">
 <th id="stub_1_5" scope="row" class="gt_row gt_left gt_stub">Asia</th>
 <td headers="continent stub_1_5 size" class="gt_row gt_right">
-<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span> 16988</td>
+<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>1</sup></span> 16988</td>
 </tr>
 <tr>
 <th id="stub_1_6" scope="row" class="gt_row gt_left gt_stub">Africa</th>
@@ -5481,7 +5520,7 @@ use any of the strategies to reference rows as we did we footnotes
 <tr>
 <th id="stub_1_9" scope="row" class="gt_row gt_left gt_stub">Antarctica</th>
 <td headers="continent stub_1_9 size" class="gt_row gt_right">
-<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>2</sup></span> 5500</td>
+<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>2</sup></span> 5500</td>
 </tr>
 <tr>
 <th id="stub_1_10" scope="row" class="gt_row gt_left gt_stub">Europe</th>
@@ -5499,12 +5538,12 @@ use any of the strategies to reference rows as we did we footnotes
 <tfoot class="gt_footnotes">
 <tr>
 <td class="gt_footnote" colspan="2">
-<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span> <span class="gt_from_md">The <strong>largest</strong> by area.</span>
+<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>1</sup></span> <span class="gt_from_md">The <strong>largest</strong> by area.</span>
 </td>
     </tr>
 <tr>
 <td class="gt_footnote" colspan="2">
-<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>2</sup></span> The lowest by population.</td>
+<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>2</sup></span> The lowest by population.</td>
     </tr>
 </tfoot>
 </table>
@@ -5528,11 +5567,11 @@ the categories <code>continent</code>, <code>country</code>, and
 when using the <code><a href="../reference/gt.html">gt()</a></code> function’s <code>groupname_col</code>
 argument (e.g.,
 <code>gt(islands_tbl, rowname_col = "name", groupname_col = "groupname") |&gt; ...</code>).
-Then, there would be no need to use the <code><a href="../reference/tab_row_group.html">tab_row_group()</a></code>
-statements. This strategy of supplying group names in a column can
-sometimes be advantageous since we can rely on functions such as those
-available in <strong>dplyr</strong> to generate the categories (e.g.,
-using <code>case_when()</code> or <code>if_else()</code>).</p>
+Then, there would be no need to use <code><a href="../reference/tab_row_group.html">tab_row_group()</a></code>. This
+strategy of supplying group names in a column can sometimes be
+advantageous since we can rely on functions such as those available in
+<strong>dplyr</strong> to generate the categories (e.g., using
+<code>case_when()</code> or <code>if_else()</code>).</p>
 </div>
 <div class="section level3">
 <h3 id="the-column-labels">The Column Labels<a class="anchor" aria-label="anchor" href="#the-column-labels"></a>
@@ -5568,7 +5607,7 @@ passed to <code><a href="../reference/gt.html">gt()</a></code>.</p>
 <p>Let’s organize the time information under a <code>Time</code>
 <em>spanner column label</em>, and put the other columns under a
 <code>Measurement</code> <em>spanner column label</em>. We can do this
-with the <code><a href="../reference/tab_spanner.html">tab_spanner()</a></code> function.</p>
+with <code><a href="../reference/tab_spanner.html">tab_spanner()</a></code>.</p>
 <div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Modify the `airquality` dataset by adding the year</span></span>
 <span><span class="co"># of the measurements (1973) and limiting to 10 rows</span></span>
@@ -6039,6 +6078,10 @@ with the <code><a href="../reference/tab_spanner.html">tab_spanner()</a></code> 
 #cmrwtkdbir .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
+}
+
+#cmrwtkdbir div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
 }
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
@@ -6631,6 +6674,10 @@ with the <code><a href="../reference/tab_spanner.html">tab_spanner()</a></code> 
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
+
+#slsqjlmpgu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
@@ -6775,13 +6822,11 @@ HTML entity (<code>&amp;deg;</code>).</p>
 
 
     <footer><div class="pkgdown-footer-left">
-  <p></p>
-<p>Developed by Richard Iannone, Joe Cheng, Barret Schloerke, Ellis Hughes, Alexandra Lauer, <a href="https://jooyoungseo.github.io/" class="external-link">JooYoung Seo</a>, Ken Brevoort, Posit Software, PBC.</p>
+  <p>Developed by Richard Iannone, Joe Cheng, Barret Schloerke, Ellis Hughes, Alexandra Lauer, <a href="https://jooyoungseo.github.io/" class="external-link">JooYoung Seo</a>, Ken Brevoort, Olivier Roy, Posit Software, PBC.</p>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.8.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.9.</p>
 </div>
 
     </footer>

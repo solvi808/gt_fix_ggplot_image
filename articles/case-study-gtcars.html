@@ -17,7 +17,7 @@
 <link href="../deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
 <script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
-<!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><link href="../extra.css" rel="stylesheet">
+<!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js" integrity="sha512-7O5pXpc0oCRrxk8RUfDYFgn0nO1t+jLuIOQdOMRp4APB7uZ4vSjspzp5y6YDtDs4VzUSTbWzBFZ/LKJhnyFOKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><link href="../extra.css" rel="stylesheet">
 <meta property="og:title" content="Case Study: gtcars">
 <meta property="og:description" content="gt">
 <meta property="og:image" content="https://gt.rstudio.com/logo.svg">
@@ -110,8 +110,7 @@
 all know <code>mtcars</code>… what is <code>gtcars</code>? It’s
 basically a modernized <code>mtcars</code> for the <strong>gt</strong>
 age. It’s part of the <strong>gt</strong> package, and here is a preview
-of the tibble using <strong>dplyr</strong>’s <code>glimpse()</code>
-function:</p>
+of the tibble using <code><a href="https://pillar.r-lib.org/reference/glimpse.html" class="external-link">dplyr::glimpse()</a></code>:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># This is `gtcars`</span></span>
 <span><span class="fu">glimpse</span><span class="op">(</span><span class="va">gtcars</span><span class="op">)</span></span>
@@ -644,6 +643,10 @@ prominently above.</p>
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
+
+#mwlefoodfi div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead><tr class="gt_col_headings">
@@ -807,10 +810,9 @@ prominently above.</p>
 </table>
 </div>
 <p>Getting the row groups in the preferred order can be done easily with
-<strong>dplyr</strong>’s <code>arrange()</code> function. For example,
-we can have groups that are arranged alphabetically by manufacturer
-(<code>mfr</code>) and then sorted by highest sticker price
-(<code>msrp</code>) to lowest.</p>
+<code><a href="https://dplyr.tidyverse.org/reference/arrange.html" class="external-link">dplyr::arrange()</a></code>. For example, we can have groups that are
+arranged alphabetically by manufacturer (<code>mfr</code>) and then
+sorted by highest sticker price (<code>msrp</code>) to lowest.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">gtcars_8</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">group_by</span><span class="op">(</span><span class="va">ctry_origin</span><span class="op">)</span> <span class="op">|&gt;</span></span>
@@ -1259,6 +1261,10 @@ we can have groups that are arranged alphabetically by manufacturer
 #eexombwkke .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
+}
+
+#eexombwkke div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
 }
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
@@ -1883,6 +1889,10 @@ before passing this to <code><a href="../reference/gt.html">gt()</a></code>.</p>
 #ulbfdpbcyv .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
+}
+
+#ulbfdpbcyv div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
 }
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
@@ -2514,6 +2524,10 @@ row labels (which is the newly made <code>car</code> column).</p>
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
+
+#kgufivjubq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead><tr class="gt_col_headings">
@@ -2672,18 +2686,18 @@ row labels (which is the newly made <code>car</code> column).</p>
 <h3 id="hiding-and-moving-some-columns">Hiding and Moving Some Columns<a class="anchor" aria-label="anchor" href="#hiding-and-moving-some-columns"></a>
 </h3>
 <p>Let’s hide two columns that we don’t need to the final table:
-<code>drivetrain</code> and <code>bdy_style</code>. We can use the
-<code><a href="../reference/cols_hide.html">cols_hide()</a></code> function to hide columns. The same end result
-might also have been achieved by using
+<code>drivetrain</code> and <code>bdy_style</code>. We can use
+<code><a href="../reference/cols_hide.html">cols_hide()</a></code> to hide columns. The same end result might also
+have been achieved by using
 <code>gtcars |&gt; dplyr::select(-c(drivetrain, bdy_style))</code>,
 before introducing the table to <code><a href="../reference/gt.html">gt()</a></code>. Why this function
 then? Sometimes you’ll need variables for conditional statements within
 <strong>gt</strong> but won’t want to display them in the end.</p>
 <p>Aside from hiding columns, let’s <em>move</em> some of them. Again,
 this could be done with <code><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">dplyr::select()</a></code> but there are
-options here in <strong>gt</strong> via the
+options here in <strong>gt</strong> via
 <code><a href="../reference/cols_move_to_start.html">cols_move_to_start()</a></code>, <code><a href="../reference/cols_move.html">cols_move()</a></code>, and
-<code><a href="../reference/cols_move_to_end.html">cols_move_to_end()</a></code> functions.</p>
+<code><a href="../reference/cols_move_to_end.html">cols_move_to_end()</a></code>.</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Use a few `cols_*()` functions to hide and move columns </span></span>
 <span><span class="va">tab</span> <span class="op">&lt;-</span> </span>
@@ -3140,6 +3154,10 @@ options here in <strong>gt</strong> via the
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
+
+#txvafbsnay div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead><tr class="gt_col_headings">
@@ -3280,11 +3298,11 @@ options here in <strong>gt</strong> via the
 <h3 id="putting-columns-into-groups">Putting Columns Into Groups<a class="anchor" aria-label="anchor" href="#putting-columns-into-groups"></a>
 </h3>
 <p>It’s sometimes useful to arrange variables/columns into groups by
-using spanner column labels. This can be done in <strong>gt</strong> by
-using the <code><a href="../reference/tab_spanner.html">tab_spanner()</a></code> function. It takes the
-<code>label</code> and <code>columns</code> arguments;
-<code>label</code> is the spanner column label and the
-<code>columns</code> are those columns that belong in this group.</p>
+using spanner column labels. This can be done in <strong>gt</strong>
+with <code><a href="../reference/tab_spanner.html">tab_spanner()</a></code>. It takes the <code>label</code> and
+<code>columns</code> arguments; <code>label</code> is the spanner column
+label and the <code>columns</code> are those columns that belong in this
+group.</p>
 <p>Here, we’ll put the <code>mpg_c</code>, <code>mpg_h</code>,
 <code>hp</code>, <code>hp_rpm</code>, <code>trq</code>,
 <code>trq_rpm</code> columns under the <code>Performance</code> spanner
@@ -3747,6 +3765,10 @@ spanner column label is styled with Markdown by using the
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
+
+#orehalspkz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
@@ -3894,9 +3916,9 @@ spanner column label is styled with Markdown by using the
 <h3 id="merging-columns-together-and-labeling-them">Merging Columns Together and Labeling Them<a class="anchor" aria-label="anchor" href="#merging-columns-together-and-labeling-them"></a>
 </h3>
 <p>Sometimes we’d like to combine the data from two columns into a
-single column. The <code><a href="../reference/cols_merge.html">cols_merge()</a></code> function allows us to do
-this, we just need to describe how the data should be combined. For our
-table, let’s merge together the following pairs of columns:</p>
+single column. <code><a href="../reference/cols_merge.html">cols_merge()</a></code> allows us to do this, we just
+need to describe how the data should be combined. For our table, let’s
+merge together the following pairs of columns:</p>
 <ul>
 <li>
 <code>mpg_c</code> and <code>mpg_h</code> (miles per gallon in city
@@ -3908,15 +3930,15 @@ RPM)</li>
 <code>trq</code> and <code>trq_rpm</code> (torque and associated
 RPM)</li>
 </ul>
-<p>The <code><a href="../reference/cols_merge.html">cols_merge()</a></code> function uses a <code>col_1</code>
-column and a <code>col_2</code> column. Once combined, the
-<code>col_1</code> column will be retained and the <code>col_2</code>
-column will be dropped. The pattern argument uses <code>{1}</code> and
-<code>{2}</code> to represent the content of <code>col_1</code> and
-<code>col_2</code>. Here, we can use string literals to add text like
-<code>rpm</code> or the <code>@</code> sign. Furthermore, because we are
-targeting an HTML table, we can use the <code>&lt;br&gt;</code> tag to
-insert a linebreak.</p>
+<p><code><a href="../reference/cols_merge.html">cols_merge()</a></code> uses a <code>col_1</code> column and a
+<code>col_2</code> column. Once combined, the <code>col_1</code> column
+will be retained and the <code>col_2</code> column will be dropped. The
+pattern argument uses <code>{1}</code> and <code>{2}</code> to represent
+the content of <code>col_1</code> and <code>col_2</code>. Here, we can
+use string literals to add text like <code>rpm</code> or the
+<code>@</code> sign. Furthermore, because we are targeting an HTML
+table, we can use the <code>&lt;br&gt;</code> tag to insert a
+linebreak.</p>
 <p>We are going to do something a little special with the
 <code>pattern</code> for the <code>mpg_c</code> and <code>mpg_h</code>
 columns and wrap it all with
@@ -3929,9 +3951,9 @@ it’s better to remove that entry entirely with this specialized pattern
 syntax.</p>
 <p>Labeling columns essentially means that we are choosing
 display-friendly labels that are no longer simply the column names (the
-default label). The <code><a href="../reference/cols_label.html">cols_label()</a></code> function makes this
-relabeling possible. It accepts a series of named arguments in the form
-of <code>&lt;column_name&gt; = &lt;column_label&gt;, ...</code>.</p>
+default label). <code><a href="../reference/cols_label.html">cols_label()</a></code> makes this relabeling
+possible. It accepts a series of named arguments in the form of
+<code>&lt;column_name&gt; = &lt;column_label&gt;, ...</code>.</p>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Perform three column merges to better present</span></span>
 <span><span class="co"># MPG, HP, and torque; relabel all the remaining</span></span>
@@ -4405,6 +4427,10 @@ of <code>&lt;column_name&gt; = &lt;column_label&gt;, ...</code>.</p>
 #cbwjcfdjag .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
+}
+
+#cbwjcfdjag div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
 }
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
@@ -4986,6 +5012,10 @@ want to apply the formatting to the entire column of data.</p>
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
+
+#fvsybhaagl div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
@@ -5110,21 +5140,21 @@ want to apply the formatting to the entire column of data.</p>
 <code>mpg_c</code>, <code>hp</code>, and <code>trq</code> columns. All
 other columns will maintain their default alignments.</p>
 <p>It’s sometimes useful to modify the default styles of table cells. We
-can do this in a targeted way with the <code><a href="../reference/tab_style.html">tab_style()</a></code>
-function. That function require two key pieces of information: a
-<code>style</code> definition, and one or more <code>locations</code>
-(which cells should the styles be applied to?). The <code>style</code>
-argument commonly uses the <code>cell_*()</code> helper functions. There
-are three of these (<code><a href="../reference/cell_text.html">cell_text()</a></code>, <code><a href="../reference/cell_fill.html">cell_fill()</a></code>
-and <code><a href="../reference/cell_borders.html">cell_borders()</a></code>) and each contains different arguments
-for the different styles that are supported.</p>
-<p>Here we will use the <code><a href="../reference/cell_text.html">cell_text()</a></code> helper function and
-specify a text <code>size</code> of <code>"12px"</code> for our targeted
-cells—both <code>px(12)</code> and <code>"12px"</code> work equally well
-here. We also use helper functions with the <code>locations</code>
-argument and these are the <code>cells_*()</code> functions. We would
-like to target the data cells in all columns except <code>year</code>
-and <code>msrp</code> so we need to use <code>cells_body</code> and then
+can do this in a targeted way with <code><a href="../reference/tab_style.html">tab_style()</a></code>. That
+function require two key pieces of information: a <code>style</code>
+definition, and one or more <code>locations</code> (which cells should
+the styles be applied to?). The <code>style</code> argument commonly
+uses the <code>cell_*()</code> helper functions. There are three of
+these (<code><a href="../reference/cell_text.html">cell_text()</a></code>, <code><a href="../reference/cell_fill.html">cell_fill()</a></code> and
+<code><a href="../reference/cell_borders.html">cell_borders()</a></code>) and each contains different arguments for
+the different styles that are supported.</p>
+<p>Here we will use <code><a href="../reference/cell_text.html">cell_text()</a></code> and specify a text
+<code>size</code> of <code>"12px"</code> for our targeted cells—both
+<code>px(12)</code> and <code>"12px"</code> work equally well here. We
+also use helper functions with the <code>locations</code> argument and
+these are the <code>cells_*()</code> functions. We would like to target
+the data cells in all columns except <code>year</code> and
+<code>msrp</code> so we need to use <code>cells_body</code> and then
 supply our target columns to its own <code>columns</code> argument.</p>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Center-align three columns in the gt table and</span></span>
@@ -5588,6 +5618,10 @@ supply our target columns to its own <code>columns</code> argument.</p>
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
+
+#vijbfglzvn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
@@ -5707,11 +5741,11 @@ supply our target columns to its own <code>columns</code> argument.</p>
 <div class="section level3">
 <h3 id="text-transforms">Text Transforms<a class="anchor" aria-label="anchor" href="#text-transforms"></a>
 </h3>
-<p>A text transform via the <code><a href="../reference/text_transform.html">text_transform()</a></code> function is a
-great way to further manipulate text in data cells (even after they’ve
-been formatted with the <code>fmt*()</code> function). After targeting
-data cells with the <code><a href="../reference/cells_body.html">cells_body()</a></code> location helper function,
-we supply a function to the <code>fn</code> argument that processes a
+<p>Transforming text with <code><a href="../reference/text_transform.html">text_transform()</a></code> is a great way
+to further manipulate text in data cells (even after they’ve been
+formatted with the <code>fmt*()</code> function). After targeting data
+cells with the <code><a href="../reference/cells_body.html">cells_body()</a></code> location helper function, we
+supply a function to the <code>fn</code> argument that processes a
 vector of text (the vector <code>x</code> will be the formatted text in
 each of the targeted cells). If we intend to render an HTML table, we
 can directly apply HTML tags in the transformation function. The
@@ -6196,6 +6230,10 @@ table.</p>
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
+
+#egslqeqmfa div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
@@ -6323,11 +6361,11 @@ table.</p>
 <div class="section level3">
 <h3 id="table-header-title-and-subtitle">Table Header: Title and Subtitle<a class="anchor" aria-label="anchor" href="#table-header-title-and-subtitle"></a>
 </h3>
-<p>The <code><a href="../reference/tab_header.html">tab_header()</a></code> function allows us to place a table
-title and, optionally, a subtitle at the top of the display table. It’s
-generally a good idea to have both in a table, where the subtitle
-provides additional information (though that isn’t quite the case in our
-example below).</p>
+<p><code><a href="../reference/tab_header.html">tab_header()</a></code> allows us to place a table title and,
+optionally, a subtitle at the top of the display table. It’s generally a
+good idea to have both in a table, where the subtitle provides
+additional information (though that isn’t quite the case in our example
+below).</p>
 <div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Add a table title and subtitle; we can use</span></span>
 <span><span class="co"># markdown with the `md()` helper function</span></span>
@@ -6784,6 +6822,10 @@ example below).</p>
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
+
+#amrewkadgw div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
@@ -6917,11 +6959,11 @@ example below).</p>
 <div class="section level3">
 <h3 id="adding-a-source-citation">Adding a Source Citation<a class="anchor" aria-label="anchor" href="#adding-a-source-citation"></a>
 </h3>
-<p>A <em>source note</em> can be added below the display table using the
-<code><a href="../reference/tab_source_note.html">tab_source_note()</a></code> function. We can even add multiple source
-notes with multiple calls of that function. Here, we supply a web URL
-and by using Markdown (with <code><a href="../reference/md.html">md()</a></code>) it’s easy to create a
-link to the source of the data.</p>
+<p>A <em>source note</em> can be added below the display table with
+<code><a href="../reference/tab_source_note.html">tab_source_note()</a></code>. We can even add multiple source notes
+with multiple calls of that function. Here, we supply a web URL and by
+using Markdown (with <code><a href="../reference/md.html">md()</a></code>) it’s easy to create a link to
+the source of the data.</p>
 <div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Add a source note to the bottom of the table; this</span></span>
 <span><span class="co"># appears below the footnotes</span></span>
@@ -7379,6 +7421,10 @@ link to the source of the data.</p>
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
+
+#ifmmyucmrw div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
@@ -7524,7 +7570,7 @@ are:</p>
 <pre><code>a. identifying the car with the best gas mileage (city)
 b. identifying the car with the highest horsepower
 c. stating the currency of the MSRP</code></pre>
-<p>The <code><a href="../reference/tab_footnote.html">tab_footnote()</a></code> function expects note text for the
+<p><code><a href="../reference/tab_footnote.html">tab_footnote()</a></code> expects note text for the
 <code>footnote</code> argument, and locations for where the footnote
 mark should be attached. It will handle the placement of the footnote
 mark and also place the footnote in the footnotes area. Here, we’ll use
@@ -8113,6 +8159,10 @@ in order) and expect the same output table.</p>
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
+
+#rslsqjlmpg div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
 </style>
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
@@ -8130,7 +8180,7 @@ in order) and expect the same output table.</p>
       <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="3" scope="colgroup" id="Performance">
         <span class="gt_column_spanner">Performance</span>
       </th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="2" colspan="1" scope="col" id='MSRP&lt;span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/span&gt;'>MSRP<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="2" colspan="1" scope="col" id='MSRP&lt;span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/span&gt;'>MSRP<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>1</sup></span>
 </th>
     </tr>
 <tr class="gt_col_headings">
@@ -8204,7 +8254,7 @@ in order) and expect the same output table.</p>
 <td headers="Germany stub_1_6 trim" class="gt_row gt_left" style="font-size: 12px;">Mega World Coupe</td>
 <td headers="Germany stub_1_6 trsmn" class="gt_row gt_left" style="font-size: 12px;">6  Speed<br><em> Automatic/Manual </em>
 </td>
-<td headers="Germany stub_1_6 mpg_c" class="gt_row gt_center" style="font-size: 12px;">28c<br>29h<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>2</sup></span>
+<td headers="Germany stub_1_6 mpg_c" class="gt_row gt_center" style="font-size: 12px;">28c<br>29h<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>2</sup></span>
 </td>
 <td headers="Germany stub_1_6 hp" class="gt_row gt_center" style="font-size: 12px;">357<br>@5800rpm</td>
 <td headers="Germany stub_1_6 trq" class="gt_row gt_center" style="font-size: 12px;">420<br>@3700rpm</td>
@@ -8330,7 +8380,7 @@ in order) and expect the same output table.</p>
 <td headers="Italy stub_1_17 trsmn" class="gt_row gt_left" style="font-size: 12px;">7  Speed<br><em> Automatic </em>
 </td>
 <td headers="Italy stub_1_17 mpg_c" class="gt_row gt_center" style="font-size: 12px;">12c<br>16h</td>
-<td headers="Italy stub_1_17 hp" class="gt_row gt_center" style="font-size: 12px;">949<br>@9000rpm<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>3</sup></span>
+<td headers="Italy stub_1_17 hp" class="gt_row gt_center" style="font-size: 12px;">949<br>@9000rpm<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>3</sup></span>
 </td>
 <td headers="Italy stub_1_17 trq" class="gt_row gt_center" style="font-size: 12px;">664<br>@6750rpm</td>
 <td headers="Italy stub_1_17 msrp" class="gt_row gt_right">$1,416,362</td>
@@ -8681,16 +8731,16 @@ in order) and expect the same output table.</p>
 <tfoot class="gt_footnotes">
 <tr>
 <td class="gt_footnote" colspan="8">
-<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span> All prices in U.S. dollars (USD).</td>
+<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>1</sup></span> All prices in U.S. dollars (USD).</td>
     </tr>
 <tr>
 <td class="gt_footnote" colspan="8">
-<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>2</sup></span> <span class="gt_from_md">Best gas mileage (city) of all the <strong>gtcars</strong>.</span>
+<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>2</sup></span> <span class="gt_from_md">Best gas mileage (city) of all the <strong>gtcars</strong>.</span>
 </td>
     </tr>
 <tr>
 <td class="gt_footnote" colspan="8">
-<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>3</sup></span> <span class="gt_from_md">The highest horsepower of all the <strong>gtcars</strong>.</span>
+<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"><sup>3</sup></span> <span class="gt_from_md">The highest horsepower of all the <strong>gtcars</strong>.</span>
 </td>
     </tr>
 </tfoot>
@@ -8708,13 +8758,11 @@ HTML is accepted.</p>
 
 
     <footer><div class="pkgdown-footer-left">
-  <p></p>
-<p>Developed by Richard Iannone, Joe Cheng, Barret Schloerke, Ellis Hughes, Alexandra Lauer, <a href="https://jooyoungseo.github.io/" class="external-link">JooYoung Seo</a>, Ken Brevoort, Posit Software, PBC.</p>
+  <p>Developed by Richard Iannone, Joe Cheng, Barret Schloerke, Ellis Hughes, Alexandra Lauer, <a href="https://jooyoungseo.github.io/" class="external-link">JooYoung Seo</a>, Ken Brevoort, Olivier Roy, Posit Software, PBC.</p>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.8.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.9.</p>
 </div>
 
     </footer>
